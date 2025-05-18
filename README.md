@@ -31,44 +31,10 @@ project/
 ├── config.php              # Database configuration
 ├── index.php               # Main application logic and frontend
 ├── README.md               # Project documentation
-└── assets/ (optional)      # For custom CSS, JS, or images
+
 ```
 
 ---
-
-## ⚙️ Setup Instructions
-
-1. **Clone or download this repository**:
-   ```bash
-   git clone https://github.com/yourusername/customer-directory.git
-   cd customer-directory
-   ```
-
-2. **Database Setup**:
-   - Import the following SQL to create the `customers` table:
-
-     ```sql
-     CREATE TABLE `customers` (
-       `id` INT AUTO_INCREMENT PRIMARY KEY,
-       `first_name` VARCHAR(100),
-       `last_name` VARCHAR(100),
-       `city` VARCHAR(100),
-       `country` VARCHAR(100),
-       `mobile_number` VARCHAR(20),
-       `date_n_time` DATETIME DEFAULT CURRENT_TIMESTAMP
-     );
-     ```
-
-   - Populate it with sample records or your own data.
-
-3. **Update your `config.php`**:
-   Set your DB credentials:
-   ```php
-   $conn = new mysqli("localhost", "username", "password", "database_name");
-   if ($conn->connect_error) {
-       die("Connection failed: " . $conn->connect_error);
-   }
-   ```
 
 4. **Run the App**:
    - Open `index.php` in a local or remote server environment.
@@ -86,21 +52,12 @@ project/
 
 ---
 
-## 📸 Screenshot
-
-*(Include a screenshot of your app here)*
-
----
 
 ## 🙋‍♀️ Author
 
 **Mahek Bepari**  
 Final Year BCA Student  
 Intern @ Ultimez Technology  
-GitHub: [yourusername](https://github.com/yourusername)
+GitHub: [Maheknaaz](https://github.com/Maheknaaz)
 
 ---
-
-## 📜 License
-
-This project is open-source and free to use for educational and non-commercial purposes.
